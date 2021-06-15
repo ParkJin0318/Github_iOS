@@ -33,7 +33,7 @@ extension ProfileViewController: View {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupDataSource()
-        reactor = DependencyProvider().container.resolve(ProfileViewReactor.self)
+        reactor = DependencyProvider.resolve(ProfileViewReactor.self)
     }
     
     private func setupDataSource() {
@@ -45,7 +45,7 @@ extension ProfileViewController: View {
                 case .repo(let repo):
                     return {
                         let cell = RepoCellNode()
-                        cell.reactor = RepoCellReactor(service: DependencyProvider().container.resolve(RepoServiceType.self)!,
+                        cell.reactor = RepoCellReactor(service: DependencyProvider.resolve(RepoServiceType.self),
                                                        repo: repo)
                         return cell
                     }

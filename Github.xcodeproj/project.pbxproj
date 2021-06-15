@@ -418,10 +418,10 @@
 		8DF6524C267886A400EE4198 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				8DF65250267886C300EE4198 /* Response */,
-				8DF6524F267886BE00EE4198 /* Error */,
-				8DF6524E267886B700EE4198 /* Provider */,
 				8DF6524D267886B400EE4198 /* API */,
+				8DF6524E267886B700EE4198 /* Provider */,
+				8DF6524F267886BE00EE4198 /* Error */,
+				8DF65250267886C300EE4198 /* Response */,
 			);
 			path = Network;
 			sourceTree = "<group>";

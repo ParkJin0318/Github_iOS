@@ -9,13 +9,12 @@ import Swinject
 
 class DependencyProvider {
     
-    static let shared = DependencyProvider()
-    
-    let container = Container()
-    let assembler: Assembler
+    private let container: Container = Container()
+    private let assembler: Assembler
     
     init() {
         Container.loggingFunction = nil
+        
         assembler = Assembler(
             [
                 ApiAssembly(),
@@ -24,5 +23,14 @@ class DependencyProvider {
             ],
             container: container
         )
+    }
+}
+
+extension DependencyProvider {
+    
+    private static let shared = DependencyProvider()
+    
+    static func resolve<T>(_ type: T.Type) -> T {
+        return DependencyProvider.shared.container.synchronize().resolve(T.self)!
     }
 }

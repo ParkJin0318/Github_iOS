@@ -140,7 +140,7 @@ extension GithubAPI: TargetType {
     
     var headers: [String : String]? {
         var headers = ["Accept": "application/vnd.github.v3+json"]
-        headers["Authorization"] = DependencyProvider().container.resolve(AuthController.self)?.getToken()
+        headers["Authorization"] = DependencyProvider.resolve(AuthController.self).getToken()
         return headers
     }
 }

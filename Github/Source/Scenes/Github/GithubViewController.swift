@@ -40,7 +40,7 @@ extension GithubViewController: View {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
-        reactor = DependencyProvider().container.resolve(GithubViewReactor.self)
+        reactor = DependencyProvider.resolve(GithubViewReactor.self)
         
         Observable.just(.getCurrentLogin)
             .bind(to: reactor!.action)

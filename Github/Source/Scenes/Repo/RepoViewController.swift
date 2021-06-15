@@ -29,6 +29,8 @@ class RepoViewController: ASDKViewController<RepoViewContainer> {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    private var service: RepoService!
 }
 
 extension RepoViewController: View {
@@ -36,7 +38,7 @@ extension RepoViewController: View {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupDataSource()
-        reactor = DependencyProvider().container.resolve(RepoViewReactor.self)
+        reactor = DependencyProvider.resolve(RepoViewReactor.self)
     }
     
     private func setupDataSource() {
@@ -46,7 +48,7 @@ extension RepoViewController: View {
                 case .repo(let repo):
                     return {
                         let cell = RepoCellNode()
-                        cell.reactor = RepoCellReactor(service: DependencyProvider().container.resolve(RepoServiceType.self)!,
+                        cell.reactor = RepoCellReactor(service: DependencyProvider.resolve(RepoServiceType.self),
                                                        repo: repo)
                         return cell
                     }

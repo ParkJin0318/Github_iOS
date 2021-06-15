@@ -27,6 +27,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = navigationContoller
         window?.makeKeyAndVisible()
     }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            if let code = url.absoluteString.split(separator: "=").last.map({ String($0) }) {
+                delegate?.receiveCode(code: code)
+            }
+        }
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         

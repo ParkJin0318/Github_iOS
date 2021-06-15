@@ -7,10 +7,9 @@
 
 import Foundation
 
-let client_id = "8257f885877325a45dca"
-let client_secret = "a62d3fe455ed02097cf2005b305096abb36bd712"
+let client_id = "df3f37c723a953ae3505"
+let client_secret = "d34f1bc080ef82c494de1852ec3d706439979fb7"
 let scope = "repo,user"
 
 let base_url = "https://api.github.com"
 let auth_url = "https://github.com/login/oauth"
-let githubRepoJson = "GithubRepo.json"
