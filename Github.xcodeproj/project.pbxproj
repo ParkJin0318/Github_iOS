@@ -13,7 +13,7 @@
 		8DF651CA267881FB00EE4198 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF651C9267881FB00EE4198 /* SceneDelegate.swift */; };
 		8DF651D1267881FC00EE4198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF651D0267881FC00EE4198 /* Assets.xcassets */; };
 		8DF651D4267881FC00EE4198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF651D2267881FC00EE4198 /* LaunchScreen.storyboard */; };
-		8DF651DF267881FC00EE4198 /* GithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF651DE267881FC00EE4198 /* GithubTests.swift */; };
+		8DF651DF267881FC00EE4198 /* GithubApiSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF651DE267881FC00EE4198 /* GithubApiSpec.swift */; };
 		8DF651EA267881FC00EE4198 /* GithubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF651E9267881FC00EE4198 /* GithubUITests.swift */; };
 		8DF651FF267884F300EE4198 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF651FD267884F300EE4198 /* GithubViewController.swift */; };
 		8DF65200267884F300EE4198 /* GithubViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF651FE267884F300EE4198 /* GithubViewReactor.swift */; };
@@ -86,7 +86,7 @@
 		8DF651D3267881FC00EE4198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DF651D5267881FC00EE4198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DF651DA267881FC00EE4198 /* GithubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DF651DE267881FC00EE4198 /* GithubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTests.swift; sourceTree = "<group>"; };
+		8DF651DE267881FC00EE4198 /* GithubApiSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApiSpec.swift; sourceTree = "<group>"; };
 		8DF651E0267881FC00EE4198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DF651E5267881FC00EE4198 /* GithubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF651E9267881FC00EE4198 /* GithubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUITests.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 		8DF651DD267881FC00EE4198 /* GithubTests */ = {
 			isa = PBXGroup;
 			children = (
-				8DF651DE267881FC00EE4198 /* GithubTests.swift */,
+				8DF651DE267881FC00EE4198 /* GithubApiSpec.swift */,
 				8DF651E0267881FC00EE4198 /* Info.plist */,
 			);
 			path = GithubTests;
@@ -774,7 +774,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DF651DF267881FC00EE4198 /* GithubTests.swift in Sources */,
+				8DF651DF267881FC00EE4198 /* GithubApiSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
