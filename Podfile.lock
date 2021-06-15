@@ -1,0 +1,125 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Differentiator (5.0.0)
+  - MBProgressHUD (1.2.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Nimble (9.2.0)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.3):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
+  - Quick (4.0.0)
+  - ReactorKit (3.0.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxDataSources-Texture (1.4.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+    - Texture (~> 3.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - RxTexture2 (1.3.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+    - Texture (~> 3.0)
+  - Swinject (2.7.1)
+  - Texture (3.0.0):
+    - Texture/AssetsLibrary (= 3.0.0)
+    - Texture/Core (= 3.0.0)
+    - Texture/MapKit (= 3.0.0)
+    - Texture/Photos (= 3.0.0)
+    - Texture/PINRemoteImage (= 3.0.0)
+    - Texture/Video (= 3.0.0)
+  - Texture/AssetsLibrary (3.0.0):
+    - Texture/Core
+  - Texture/Core (3.0.0)
+  - Texture/MapKit (3.0.0):
+    - Texture/Core
+  - Texture/Photos (3.0.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.0.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.0.0):
+    - Texture/Core
+  - Then (2.7.0)
+  - WeakMapTable (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4.1)
+  - MBProgressHUD (~> 1.2.0)
+  - Moya (~> 14.0)
+  - Nimble
+  - Quick
+  - ReactorKit
+  - RxDataSources-Texture
+  - RxTexture2 (~> 1.3.0)
+  - Swinject
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - MBProgressHUD
+    - Moya
+    - Nimble
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - Quick
+    - ReactorKit
+    - RxCocoa
+    - RxDataSources-Texture
+    - RxRelay
+    - RxSwift
+    - RxTexture2
+    - Swinject
+    - Texture
+    - Then
+    - WeakMapTable
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  ReactorKit: 5348c9881dcb546605b451e32759dccc9937d36e
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxDataSources-Texture: 41a18bc78bcae448a622dcb808ee03f8008801b8
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  RxTexture2: afc37076fc7ac380642d569533ed858d296732fe
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
+
+PODFILE CHECKSUM: 1ac2453ba8eb68f3eab5b53a3f72b4063b3d0169
+
+COCOAPODS: 1.10.1
